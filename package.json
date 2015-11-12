@@ -1,0 +1,17 @@
+{
+  "name": "babylone-hook",
+  "version": "1.0.0",
+  "description": "smart git hook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marc deletang",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "json-lint": "0.1.0",
+    "lodash": "3.10.1"
+  }
+}
