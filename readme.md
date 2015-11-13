@@ -24,7 +24,6 @@ Listen to push event on github for the branch master:
 	{ "p" : "push" },
 	{ "d" : "/home/ubuntu/your-repo" },
 	{ "url" : "/github-hook" },
-	{ "g" : "gitlab" },
     //Or an array of command
 	{ "cmd1" : [ "echo cmd11", "sleep 2", "echo cmd12" ] },
 	{ "cmd2" : [ "echo cmd21",  "sleep 2 && echo cmd22" ] }
