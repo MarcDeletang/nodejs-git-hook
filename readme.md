@@ -40,7 +40,7 @@ Listen to push event on github for the branch master:
 		"actions": [
 		{
 			"directory" : "{d}",
-			"commands" : [ "echo github OK !" ]
+			"commands" : "{cmd}"
 		}]
 	}
 	]
