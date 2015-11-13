@@ -33,8 +33,7 @@ Listen to push event on github for the branch master:
 	],
 	//If you want the server to listen to specific URLS
     //it will execute all the methods you defined if criteria match
-    //In this case:
-    //github push event on /github-hook will trigger
+    //In this case: github push event on /github-hook will trigger
     "urls" : [
 	{ "{url}" : [ "githubMethod" ] }
 	],
