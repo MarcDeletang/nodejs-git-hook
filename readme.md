@@ -1,8 +1,12 @@
+###Disclaimer
+
+This project only works for push request on github and gitlab. If you want me to add more 
+
 ### How to use it:
 
 To start you webhook server, use:
 
-node app.js -c config_sample.json
+node app.js -c github_sample.json
 
 ### How it works:
 
