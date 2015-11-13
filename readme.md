@@ -77,7 +77,11 @@ Listen to push event on github for the branch master:
 		{
 			"directory" : "{d}",
 			"commands" : "{cmd}"
-		}]
+		},{
+        	"directory" : "{d}/totalFail",
+			"commands" : [ "echo 'It will not work'"]
+        }
+        ]
 	}
 	]
 }
