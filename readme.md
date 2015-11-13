@@ -1,6 +1,7 @@
 ### How to use it:
 
 To start you webhook server, use:
+
 node app.js -c config_sample.json
 
 Configuration file:
