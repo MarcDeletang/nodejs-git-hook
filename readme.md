@@ -10,14 +10,17 @@ Configuration file:
 	"port" : 1340,
     //Declare variables you want to use later
 	"vars" : [
+    //It can be a string
 	{ "p" : "push" },
 	{ "d" : "/home/ubuntu/test" },
 	{ "d2" : "/home/ubuntu/test2" },
 	{ "url" : "/groupeer-hook" },
 	{ "g" : "gitlab" },
+    //Or an array of command
 	{ "cmd1" : [ "echo cmd11", "sleep 2", "echo cmd12" ] },
 	{ "cmd2" : [ "echo cmd21",  "sleep 2 && echo cmd22" ] }
 	],
+    //If 
 	"urls" : [
 	{ "/git-hook" : [ "test2" ] },
 	{ "{url}" : [ "test" ] }
