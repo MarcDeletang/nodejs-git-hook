@@ -1,0 +1,26 @@
+{
+	"verbose" : true,
+	"port" : 1340,
+	"vars" : [
+	{ "p" : "push" },
+	{ "d" : "/home/ubuntu/nodejs-git-hook" },
+	{ "url" : "/github-hook" },
+	{ "cmd" : [ "echo 'It works !'",  "git pull origin master" ] }
+	],
+	"urls" : [
+	{ "{url}" : [ "githubMethod" ] }
+	],
+	"methods" : [
+	{
+		"type" : "{p}",
+		"branch" : "master",
+		"repository" : "github",
+		"name" : "githubMethod",
+		"actions": [
+		{
+			"directory" : "{d}",
+			"commands" : "{cmd}"
+		}]
+	}
+	]
+}
