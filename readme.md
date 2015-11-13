@@ -12,42 +12,6 @@ See some configurations below
 ###Configuration file:
 Listen to push event on github for the branch master:
 
-```javascript
-{
-
-	"verbose" : true,
-    //Port you want to listen to
-	"port" : 1340,
-    //Declare variables you want to use later
-	"vars" : [
-    //It can be a string
-	{ "p" : "push" },
-	{ "d" : "/home/ubuntu/your-repo" },
-	{ "url" : "/github-hook" },
-    //Or an array of command
-	{ "cmd" : [ "echo 'It works !'",  "git pull origin master" ] }
-	],
-    //If you want the server to listen to specific URLS, it will execute all the methods you defined if criteria match
-	"urls" : [
-	{ "{url}" : [ "githubMethod" ] }
-	],
-	"methods" : [
-	{
-		"type" : "{p}",
-		"branch" : "master",
-		"repository" : "github",
-		"name" : "githubMethod",
-		"actions": [
-		{
-			"directory" : "{d}",
-			"commands" : "{cmd}"
-		}]
-	}
-	]
-}
-
-
-
 {
 	//Enable verbose mode
     "verbose" : true,
