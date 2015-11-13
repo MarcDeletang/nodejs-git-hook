@@ -17,7 +17,7 @@ Listen to push event on github for the branch master:
 	//Enable verbose module
 	"verbose" : true,
     //Port you want to listen to
-	"port" : 1340,
+	"port" : 1340, 
     //Declare variables you want to use later
 	"vars" : [
     //It can be a string
