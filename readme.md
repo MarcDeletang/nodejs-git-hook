@@ -6,7 +6,6 @@ node app.js -c config_sample.json
 
 Configuration file:
 
-
 ```javascript
 {
 	//Enable verbose module
