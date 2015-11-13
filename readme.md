@@ -4,7 +4,12 @@ To start you webhook server, use:
 
 node app.js -c config_sample.json
 
-Configuration file:
+### How it works:
+
+The server will try to parse the configuration file and listen to the urls you specified (only HTTP POST request works for now). Whenever the server gets a message that match your criteria, it will execute the method you defined for it.
+See some configurations below
+
+###Configuration file:
 
 ```javascript
 {
@@ -24,7 +29,7 @@ Configuration file:
 	{ "cmd1" : [ "echo cmd11", "sleep 2", "echo cmd12" ] },
 	{ "cmd2" : [ "echo cmd21",  "sleep 2 && echo cmd22" ] }
 	],
-    //If 
+    //If you want the server to listen to specific URLS
 	"urls" : [
 	{ "/git-hook" : [ "test2" ] },
 	{ "{url}" : [ "test" ] }
