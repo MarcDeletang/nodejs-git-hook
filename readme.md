@@ -27,7 +27,8 @@ Listen to push event on github for the branch master:
     //Or an array of command
 	{ "cmd" : [ "echo 'It works !'",  "git pull origin master" ] }
 	],
-	//If you want the server to listen to specific URLS, it will execute all the methods you defined if criteria match, in this case, github push event on /github-hook will trigger the method
+	//If you want the server to listen to specific URLS, it will execute all
+    the methods you defined if criteria match, in this case, github push event on /github-hook will trigger the method
     "urls" : [
 	{ "{url}" : [ "githubMethod" ] }
 	],
