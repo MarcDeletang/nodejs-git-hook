@@ -10,6 +10,7 @@ The server will try to parse the configuration file and listen to the urls you s
 See some configurations below
 
 ###Configuration file:
+Listen to push event on github for the branch master:
 
 ```javascript
 {
@@ -21,7 +22,7 @@ See some configurations below
 	"vars" : [
     //It can be a string
 	{ "p" : "push" },
-	{ "d" : "/home/ubuntu/test" },
+	{ "d" : "/home/ubuntu/your-repo" },
 	{ "d2" : "/home/ubuntu/test2" },
 	{ "url" : "/groupeer-hook" },
 	{ "g" : "gitlab" },
@@ -38,21 +39,6 @@ See some configurations below
 	{
 		"type" : "{p}",
 		"branch" : "master",
-		"repository" : "gitlab",
-		"name" : "test",
-		"actions": [
-		{
-			"directory" : "{d}",
-			"commands" : "{cmd1}"
-		},
-		{
-			"directory" : "{d2}",
-			"commands" :  "{cmd2}"
-		}]
-	},
-	{
-		"type" : "push",
-		"branch" : "master",
 		"repository" : "github",
 		"name" : "test2",
 		"actions": [
@@ -60,28 +46,7 @@ See some configurations below
 			"directory" : "{d}",
 			"commands" : [ "echo github OK !" ]
 		}]
-	},
-	{
-		"type" : "custom",
-		"url" : "YOURURL",
-		"name" : "custom",
-		"fieldsToFind" :
-		[
-		{ "fieldName" : "value" },
-		{ "fieldName" : "value" }
-		],
-		"actions" : [
-		{
-			"directory" : "/home/ubuntu",
-			"commands" : ["ls", "touch omg", "ls"]
-		},
-		{
-			"directory" : "/home/ubuntu/groupeer",
-			"commands" : ["ls"]
-		}
-		]
 	}
 	]
 }
-
 ```
