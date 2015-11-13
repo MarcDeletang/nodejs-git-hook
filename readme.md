@@ -1,6 +1,6 @@
 ###Disclaimer
 
-This project only works for push request on github and gitlab. If you want me to add more 
+This project only works for push request on github and gitlab. If you want me to add more functionalities, feel free to create an issue or submit a pull request if you did it, i'll merge :)
 
 ### How to use it:
 
