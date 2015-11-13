@@ -25,20 +25,18 @@ Listen to push event on github for the branch master:
 	{ "d" : "/home/ubuntu/your-repo" },
 	{ "url" : "/github-hook" },
     //Or an array of command
-	{ "cmd1" : [ "echo cmd11", "sleep 2", "echo cmd12" ] },
-	{ "cmd2" : [ "echo cmd21",  "sleep 2 && echo cmd22" ] }
+	{ "cmd" : [ "echo 'It works !'",  "git pull origin master" ] }
 	],
-    //If you want the server to listen to specific URLS
+    //If you want the server to listen to specific URLS, it will execute all the methods you defined if criteria match
 	"urls" : [
-	{ "/git-hook" : [ "test2" ] },
-	{ "{url}" : [ "test" ] }
+	{ "{url}" : [ "githubMethod" ] }
 	],
 	"methods" : [
 	{
 		"type" : "{p}",
 		"branch" : "master",
 		"repository" : "github",
-		"name" : "test2",
+		"name" : "githubMethod",
 		"actions": [
 		{
 			"directory" : "{d}",
