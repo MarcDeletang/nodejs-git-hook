@@ -23,8 +23,7 @@ Listen to push event on github for the branch master:
     //It can be a string
 	{ "p" : "push" },
 	{ "d" : "/home/ubuntu/your-repo" },
-	{ "d2" : "/home/ubuntu/test2" },
-	{ "url" : "/groupeer-hook" },
+	{ "url" : "/github-hook" },
 	{ "g" : "gitlab" },
     //Or an array of command
 	{ "cmd1" : [ "echo cmd11", "sleep 2", "echo cmd12" ] },
