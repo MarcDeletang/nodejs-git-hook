@@ -12,6 +12,7 @@ See some configurations below
 ###Configuration file:
 Listen to push event on github for the branch master:
 
+```javascript
 {
 	//Enable verbose mode
     "verbose" : true,
