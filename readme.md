@@ -11,7 +11,6 @@ node app.js -c github_sample.json
 ### How it works:
 
 The server will try to parse the configuration file and listen to the urls you specified (only HTTP POST request works for now). Whenever the server gets a message that match your criteria, it will execute the method you defined for it.
-See some configurations below
 
 ###Configuration file:
 Listen to push event on github for the branch master:
